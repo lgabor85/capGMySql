@@ -2,13 +2,13 @@ import os
 import mysql.connector
 from tabulate import tabulate
 
-# Step 1: Read the environment variables
+# Read the environment variables
 db_host = os.getenv('DB_HOST')
 db_user = os.getenv('DB_USER')
 db_password = os.getenv('DB_PASSWORD')
 db_name = os.getenv('DB_NAME')
 
-# Step 2: Establish a connection to the MySQL database
+# Establish a connection to the MySQL database
 conn = mysql.connector.connect(
     host=db_host,
     user=db_user,
@@ -16,7 +16,7 @@ conn = mysql.connector.connect(
     database=db_name
 )
 
-# Write an SQL query to fetch unique values of “city” from “customers” table using the alias name as “CUSTOMER_CITY” and output the result in a tabular format into a file named “unique_cities.txt”.
+# Write an SQL query to print all details of employees, excluding those with first names “Gerard” and “Mary” and save the output in tabular format in a file "employee_details.txt".
 file = open('employee_detail.txt', 'w')
 cursor = conn.cursor()
 cursor.execute("SELECT * FROM employees WHERE firstName NOT IN ('Gerard', 'Mary')")

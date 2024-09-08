@@ -16,12 +16,12 @@ conn = mysql.connector.connect(
     database=db_name
 )
 
-# Write an SQL query to fetch unique values of “city” from “customers” table using the alias name as “CUSTOMER_CITY” and output the result in a tabular format into a file named “unique_cities.txt”.
-file = open('unique_cities.txt', 'w')
+# Write  an  SQL  query  to  print  full  name  as  concatenation  of  first  and  last  name  of employees whose last name ends with ‘n’. Save the reults in a file named uniqueNames.txt
+file = open('uniqueNames.txt', 'w')
 cursor = conn.cursor()
-cursor.execute('SELECT DISTINCT city AS CUSTOMER_CITY FROM customers')
+cursor.execute("SELECT CONCAT(firstName, ' ', lastName) AS fullName FROM employees WHERE lastName LIKE '%n'")
 result = cursor.fetchall()
-file.write(tabulate(result, headers=['CUSTOMER_CITY'], tablefmt='grid'))
+file.write(tabulate(result, headers=['fullName'], tablefmt='grid'))
 file.close()
 
 # Close the cursor and connection
