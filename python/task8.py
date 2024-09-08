@@ -16,12 +16,19 @@ conn = mysql.connector.connect(
     database=db_name
 )
 
-# Write  an  SQL  query  to  print  full  name  as  concatenation  of  first  and  last  name  of employees whose last name ends with ‘n’. Save the reults in a file named uniqueNames.txt
-file = open('uniqueNames.txt', 'w')
+# Write an SQL query to print total revenue along with product names for all products
+# and save the result in a file named “total_revenue.txt”
+file = open('total_revenue.txt', 'w')
 cursor = conn.cursor()
-cursor.execute("SELECT CONCAT(firstName, ' ', lastName) AS fullName FROM employees WHERE lastName LIKE '%n'")
+cursor.execute("""
+    SELECT p.productName, 
+           COALESCE(SUM(s.quantityOrdered * s.priceEach), 0) AS total_revenue
+    FROM products p
+    LEFT JOIN orderdetails s ON p.productCode = s.productCode
+    GROUP BY p.productName;
+""")
 result = cursor.fetchall()
-file.write(tabulate(result, headers=['fullName'], tablefmt='grid'))
+file.write(tabulate(result, headers=['productName', 'total_revenue'], tablefmt='grid'))
 file.close()
 
 # Close the cursor and connection
