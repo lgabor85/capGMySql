@@ -36,7 +36,7 @@ export DB_PASSWORD="your_password"
 export DB_NAME="your_database"
 ```
 
-***define parameters for powershell**
+**define parameters for powershell**
 ```powershell
 $env:DB_HOST = "mydb.mysql.database.azure.com"
 $env:DB_USER = "admin"
