@@ -56,9 +56,11 @@ cd capGMySql
 https://www.mysqltutorial.org/getting-started-with-mysql/install-mysql/
 
 - Use the provided BICEP templates to deploy the Azure Database for MySQL - Flexible Server
+-- Look up youir local public ip
 ```powershell
 Invoke-RestMethod http://ipinfo.io/json | Select -exp ip
 ```
+--- Update the IP in the CreateFirewallRules.bicep -file
 ```powershell
 param firewallRules array = [
   {
@@ -68,6 +70,7 @@ param firewallRules array = [
   }
 ]
 ```
+--- Start the deployment from template
 ```powershell
 New-AzResourceGroupDeployment -ResourceGroupName $resourceGroupName -TemplateFile main.bicep
 ```
