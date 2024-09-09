@@ -21,6 +21,29 @@ sudo snap install powershell --classic
 ```powershell
 Install-Module -Name MySQLCmdlets -Scope CurrentUser
 ```
+### Set up the environment
+```sh
+python3 -m venv mysqlenv
+source mysqlenv/bin/activate
+pip install mysql-connector-python
+pip install tabulate
+```
+**define parameters for python**
+```sh
+export DB_HOST="your_host"
+export DB_USER="your_username"
+export DB_PASSWORD="your_password"
+export DB_NAME="your_database"
+```
+
+***define parameters for powershell**
+```powershell
+$env:DB_HOST = "mydb.mysql.database.azure.com"
+$env:DB_USER = "admin"
+$env:DB_PASSWORD = "password123"
+$env:DB_NAME = "mydatabase"
+$env:DB_PORT = "3306"
+```
 
 ## Usage
 **Clone the repository:**
