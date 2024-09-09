@@ -39,28 +39,28 @@ python3 task1.py
 ```
 
 ## Sample Queries and Automation Scripts
-**Task1.ps1**
+**Task1**
 
 ```sql
 SELECT DISTINCT city AS CUSTOMER_CITY
 FROM customers;
 ```
 
-**Task2.ps1**
+**Task2**
 ```sql
 SELECT *
 FROM employees
 WHERE firstName NOT IN ('Gerard', 'Mary');
 ```
 
-**Task3.ps1**
+**Task3**
 ```sql
 SELECT CONCAT(firstName, ' ', lastName) AS fullName
 FROM employees
 WHERE last_name LIKE '%n';
 ```
 
-**Task4.ps1**
+**Task4**
 ```sql
 SELECT e.*
 FROM employees e
@@ -68,7 +68,7 @@ JOIN offices o ON e.officeCode = o.officeCode
 WHERE o.territory = 'EMEA';
 ```
 
-**Task5.ps1**
+**Task5**
 ```sql
 SELECT o.territory, COUNT(e.employeeNumber) AS employee_count
 FROM employees e
@@ -77,7 +77,7 @@ GROUP BY o.territory
 ORDER BY employee_count DESC;
 ```
 
-**Task6.ps1**
+**Task6**
 ```sql
 SELECT p.productName, pl.textDescription AS productLine
 FROM products p
@@ -85,7 +85,7 @@ JOIN productlines pl ON p.productLine = pl.productLine
 ORDER BY pl.textDescription ASC, p.productName DESC;
 ```
 
-**Task7.ps1**
+**Task7**
 ```sql
 SELECT p.productName, SUM(s.quantityOrdered) AS total_quantity_sold
 FROM products p
@@ -97,7 +97,7 @@ ORDER BY total_quantity_sold DESC
 LIMIT 5;
 ```
 
-**Task8.ps1**
+**Task8**
 ```sql
 SELECT p.product_name, 
        COALESCE(SUM(s.quantityOrdered * s.priceEach), 0) AS total_revenue
