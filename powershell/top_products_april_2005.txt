@@ -1,0 +1,10 @@
+
+productName              total_quantity_sold
+-----------              -------------------
+1960 BSA Gold Star DBD34             117.000
+1997 BMW R 1100 S                    103.000
+1969 Dodge Charger                    97.000
+1996 Moto Guzzi 1100i                 96.000
+2002 Suzuki XREO                      95.000
+
+

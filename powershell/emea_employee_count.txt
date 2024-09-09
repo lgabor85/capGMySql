@@ -1,0 +1,9 @@
+
+territory employee_count
+--------- --------------
+NA                    10
+EMEA                   7
+APAC                   4
+Japan                  2
+
+
