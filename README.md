@@ -51,6 +51,26 @@ $env:DB_PORT = "3306"
 git clone https://github.com/yourusername/capGMySql.git
 cd capGMySql
 ```
+**Set up MySQL local server or Deploy a Azure Database for MySQL - Flexible Server**
+- MySQL Installation
+https://www.mysqltutorial.org/getting-started-with-mysql/install-mysql/
+
+- Use the provided BICEP templates to deploy the Azure Database for MySQL - Flexible Server
+```powershell
+Invoke-RestMethod http://ipinfo.io/json | Select -exp ip
+```
+```powershell
+param firewallRules array = [
+  {
+    name: 'rule1'
+    startIPAddress: 'your IP'
+    endIPAddress: 'your IP'
+  }
+]
+```
+```powershell
+New-AzResourceGroupDeployment -ResourceGroupName $resourceGroupName -TemplateFile main.bicep
+```
 
 **Run the SQL queries using the provided PowerShell or Python scripts.**
 ```sh
