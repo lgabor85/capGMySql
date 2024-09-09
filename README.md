@@ -28,6 +28,30 @@ source mysqlenv/bin/activate
 pip install mysql-connector-python
 pip install tabulate
 ```
+#### Set up MySQL local server or Deploy a Azure Database for MySQL - Flexible Server
+***MySQL Installation***
+https://www.mysqltutorial.org/getting-started-with-mysql/install-mysql/
+
+***Use the provided BICEP templates to deploy the Azure Database for MySQL - Flexible Server***
+1. Look up your local public ip
+```powershell
+Invoke-RestMethod http://ipinfo.io/json | Select -exp ip
+```
+2. Update the IP in the CreateFirewallRules.bicep -file
+```powershell
+param firewallRules array = [
+  {
+    name: 'rule1'
+    startIPAddress: 'your IP'
+    endIPAddress: 'your IP'
+  }
+]
+```
+3. Start the deployment from template
+```powershell
+New-AzResourceGroupDeployment -ResourceGroupName $resourceGroupName -TemplateFile main.bicep
+```
+
 **define parameters for python**
 ```sh
 export DB_HOST="your_host"
@@ -50,29 +74,6 @@ $env:DB_PORT = "3306"
 ```sh
 git clone https://github.com/yourusername/capGMySql.git
 cd capGMySql
-```
-**Set up MySQL local server or Deploy a Azure Database for MySQL - Flexible Server**
-- MySQL Installation
-https://www.mysqltutorial.org/getting-started-with-mysql/install-mysql/
-
-- Use the provided BICEP templates to deploy the Azure Database for MySQL - Flexible Server
--- Look up youir local public ip
-```powershell
-Invoke-RestMethod http://ipinfo.io/json | Select -exp ip
-```
---- Update the IP in the CreateFirewallRules.bicep -file
-```powershell
-param firewallRules array = [
-  {
-    name: 'rule1'
-    startIPAddress: 'your IP'
-    endIPAddress: 'your IP'
-  }
-]
-```
---- Start the deployment from template
-```powershell
-New-AzResourceGroupDeployment -ResourceGroupName $resourceGroupName -TemplateFile main.bicep
 ```
 
 **Run the SQL queries using the provided PowerShell or Python scripts.**
