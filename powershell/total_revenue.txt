@@ -1,0 +1,115 @@
+
+productName                                 total_revenue
+-----------                                 -------------
+1969 Harley Davidson Ultimate Chopper           90157.770
+1952 Alpine Renault 1300                       190017.960
+1996 Moto Guzzi 1100i                          109998.820
+2003 Harley-Davidson Eagle Drag Bike           170686.000
+1972 Alfa Romeo GTA                            127924.320
+1962 LanciaA Delta 16V                         123123.010
+1968 Ford Mustang                              161531.480
+2001 Ferrari Enzo                              190755.860
+1958 Setra Bus                                 119085.250
+2002 Suzuki XREO                               135767.030
+1969 Corvair Monza                             132363.790
+1968 Dodge Charger                              98718.760
+1969 Ford Falcon                               152543.020
+1970 Plymouth Hemi Cuda                         63489.950
+1957 Chevy Pickup                              109946.210
+1969 Dodge Charger                             104210.620
+1940 Ford Pickup Truck                         105563.120
+1993 Mazda RX-7                                114648.120
+1937 Lincoln Berline                           102563.520
+1936 Mercedes-Benz 500K Special Roadster        46078.290
+1965 Aston Martin DB5                          101778.130
+1980s Black Hawk Helicopter                    144959.910
+1917 Grand Touring Sedan                       140535.600
+1948 Porsche 356-A Roadster                     66455.620
+1995 Honda Civic                               119050.950
+1998 Chrysler Plymouth Prowler                 142530.630
+1911 Ford Town Car                              45306.770
+1964 Mercedes Tour Bus                         117669.660
+1932 Model A Ford J-Coupe                      109992.010
+1926 Ford Fire Engine                           55835.300
+P-51-D Mustang                                  68741.910
+1936 Harley Davidson El Knucklehead             49992.720
+1928 Mercedes-Benz SSK                         132275.980
+1999 Indy 500 Monte Carlo SS                   100770.120
+1913 Ford Model T Speedster                     97193.880
+1934 Ford V8 Coupe                              55172.210
+1999 Yamaha Speed Boat                          74127.240
+18th Century Vintage Horse Carriage             85328.570
+1903 Ford Model A                              111528.820
+1992 Ferrari 360 Spider red                    276839.980
+1985 Toyota Supra                                   0.000
+Collectable Wooden Train                        82617.120
+1969 Dodge Super Bee                            68783.930
+1917 Maxwell Touring Car                        87637.630
+1976 Ford Gran Torino                          121890.600
+1948 Porsche Type 356 Roadster                 121653.460
+1957 Vespa GS150                                54024.870
+1941 Chevrolet Special Deluxe Cabriolet        102537.450
+1970 Triumph Spitfire                          122254.750
+1932 Alfa Romeo 8C2300 Spider Sport             71526.220
+1904 Buick Runabout                             77800.540
+1940s Ford truck                               114232.790
+1939 Cadillac Limousine                         44037.840
+1957 Corvette Convertible                      130749.310
+1957 Ford Thunderbird                           50101.570
+1970 Chevy Chevelle SS 454                      53236.670
+1970 Dodge Coronet                              50255.450
+1997 BMW R 1100 S                              105266.640
+1966 Shelby Cobra 427 S/C                       42015.540
+1928 British Royal Navy Airplane                94885.370
+1939 Chevrolet Deluxe Coupe                     28052.940
+1960 BSA Gold Star DBD34                        67193.490
+18th century schooner                          112427.120
+1938 Cadillac V-16 Presidential Limousine       38449.090
+1962 Volkswagen Microbus                       118774.330
+1982 Ducati 900 Monster                         57995.250
+1949 Jaguar XK 120                              76670.020
+1958 Chevy Corvette Limited Edition             31627.960
+1900s Vintage Bi-Plane                          58434.070
+1952 Citroen-15CV                               94248.670
+1982 Lamborghini Diablo                         30972.870
+1912 Ford Model T Delivery Wagon                77239.920
+1969 Chevrolet Camaro Z28                       67357.300
+1971 Alpine Renault 1600s                       52339.530
+1937 Horch 930V Limousine                       52803.750
+2002 Chevy Corvette                             87404.810
+1940 Ford Delivery Sedan                        71208.180
+1956 Porsche 356A Coupe                        134240.710
+Corsair F4U ( Bird Cage)                        62269.670
+1936 Mercedes Benz 500k Roadster                29763.390
+1992 Porsche Cayenne Turbo Silver               92973.400
+1936 Chrysler Airflow                           88434.460
+1900s Vintage Tri-Plane                         68276.350
+1961 Chevrolet Impala                           69120.970
+1980’s GM Manhattan Express                     78067.820
+1997 BMW F650 ST                                89364.890
+1982 Ducati 996 R                               33268.760
+1954 Greyhound Scenicruiser                     46519.050
+1950's Chicago Surface Lines Streetcar          53791.990
+1996 Peterbilt 379 Stake Bed with Outrigger     57282.490
+1928 Ford Phaeton Deluxe                        60493.330
+1974 Ducati 350 Mk3 Desmo                       84039.240
+1930 Buick Marquette Phaeton                    41599.240
+Diamond T620 Semi-Skirted Tanker               101137.550
+1962 City of Detroit Streetcar                  52123.810
+2002 Yamaha YZR M1                              73670.640
+The Schooner Bluenose                           56455.110
+American Airlines: B767-300                     73871.220
+The Mayflower                                   69531.610
+HMS Bounty                                      73298.420
+America West Airlines B757-200                  89347.800
+The USS Constitution Ship                       66697.130
+1982 Camaro Z28                                 89272.650
+ATA: B757-300                                  102786.380
+F/A 18 Hornet 1/72                              76618.400
+The Titanic                                     84992.250
+The Queen Mary                                  78919.060
+American Airlines: MD-11S                       71753.930
+Boeing X-32A JSF                                42692.530
+Pont Yacht                                      47550.400
+
+

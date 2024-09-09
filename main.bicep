@@ -15,13 +15,8 @@ param administratorLoginPassword string
 param firewallRules array = [
   {
     name: 'rule1'
-    startIPAddress: '192.168.0.1'
-    endIPAddress: '192.168.0.255'
-  }
-  {
-    name: 'rule2'
-    startIPAddress: '192.168.1.1'
-    endIPAddress: '192.168.1.255'
+    startIPAddress: '185.65.134.229'
+    endIPAddress: '185.65.134.229'
   }
 ]
 
